@@ -1,0 +1,13 @@
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.data card-content-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e952de;
+}
