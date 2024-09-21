@@ -1,11 +1,17 @@
 import Card from "./components/Card/Card";
 import CardTA2 from "./components/CardTA2/CardTA2";
 import CardContentTA2 from "./components/CardContentTA2/CardContentTA2";
-import React, { useState } from "react";
+import InputComponentTA3 from "./components/Input/InputComponentTA3";
+import CalculatorTA4Component from "./components/CalculatorTA4/CalculatorTA4Component";
+import MagicTextComponent from "./components/MagicTextTA5/MagicTextComponent.jsx";
+import ListInputComponent from "./components/ListInputTA6/ListInputComponent.jsx";
+import React, { useState, useEffect } from "react";
+import ApiInteractorComponent from "./components/InteracciónApiTA10/ApiInteractorComponent.jsx";
+import TemporizadorComponent from "./components/TemporizadorTA11/TemporizadorComponent.jsx";
 import './App.css'
 
 // TA 1
-const App = () => {
+/* const App = () => {
   const cardData = [
     {
       title: "task 1",
@@ -44,7 +50,7 @@ const App = () => {
       ))}
     </div>
   );
-};
+}; */
 
 
 //TA2
@@ -84,26 +90,59 @@ const App = () => {
  */
 
 //TA3
-/* function App() {
-  const [inputValue, setInputValue] = useState("");
+/* const App = () => {
 
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
-  };
+  return (
+    <InputComponentTA3 />
+  );
+} */
+
+//TA4, TA9
+/* const App = () => {
+
+  return (
+    <CalculatorTA4Component />
+  );
+} */
+
+//TA5
+/* const App = () => {
 
   return (
     <div>
-      {}
-      <input
-        type="text"
-        value={inputValue}
-        onChange={handleInputChange}
-        placeholder="Ingrese texto"
-      />
-      {}
-      <p>El texto es: {inputValue}</p>
+      <MagicTextComponent />
     </div>
   );
 } */
+
+//TA6, TA7, TA8
+/* const App = () => {
+
+    return (
+      <div>
+        <ListInputComponent />
+      </div>
+    );
+  } */
+
+//TA10
+/* const App = () => {
+  return (
+    <div>
+      <ApiInteractorComponent />
+    </div>
+  );
+} */
+
+//TA11
+const App = () => {
+  const [time, setTime] = useState(0);
+
+  return (
+    <>
+      <TemporizadorComponent time={time} setTime={setTime} />
+    </>
+  );
+};
 
 export default App;
